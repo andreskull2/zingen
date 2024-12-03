@@ -1,12 +1,17 @@
 .container {
+    /* Variável para o mobile */
     --max-width: 375px;
+    /* isso é um cálculo para o espaço lateral */
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    /* isso centraliza */
     margin-inline: auto;
     border: solid violet;
 }
 
+/* Desktop */
 @media (width >= 80em) {
     .container {
+        /* variável para o desktop */
         --max-width: 80rem;
     }
 }
