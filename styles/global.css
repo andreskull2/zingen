@@ -31,12 +31,17 @@
     --fw-md: 500; /* font weight medium */
     --fw-bold: 800; /* font weight bold */
 
-    /* Mobile */
+    /* variáveis de fontes para o mobile */
     --fs-sm: 0.875rem; /* font size small 14px/16=0.875 */
     --fs-base: 1rem; /* font size 16px/16=1 */
     --fs-lg: 1.25rem; /* font size large 20px/16=1.25 */
     --fs-xl: 1.5rem; /* font size extra large 24px/16=1.5 */
     --fs-2xl: 2.5rem; /* font size 2x extra large 40px/16=2.5 */
+
+    /* Variáveis de padding para o mobile */
+    --py-base: 1rem; /* padding eixo y 16px/16=1 */
+    --py-lg: 1.5rem; /* padding eixo y 24px/16=1.5 */
+    --py-xl: 3rem; /* padding do eixo y 48px/16=3 */
 
     --px-lg: 1.5rem; /* padding do eixo x 24px/16=1.5 */
 }
@@ -84,10 +89,16 @@ ul[role="list"] {
 /* Desktop */
 @media (width >= 80em) {
     :root {
+        /* variáveis de fontes para o desktop */
         --fs-lg: 2rem; /* 32px/16=2 */
         --fs-xl: 3rem; /* 48px/16=3 */
         --fs-2xl: 4rem; /* 64px/16=4 */
 
-        --px-lg: 2rem; /* padding do eixo x 24px/16=1.5 */
+        /* Variáveis de padding para o desktop */
+        --py-base: 1.5rem; /* padding eixo y 24px/16=1.5 */
+        --py-lg: 2.5rem; /* padding eixo y 40px/16=2.5 */
+        --py-xl: 5rem; /* padding do eixo y 80px/16=5 */
+
+        --px-lg: 2rem; /* padding do eixo x 32px/16=2 */
     }
 }
