@@ -1,6 +1,11 @@
+/* Classe Botão */
 .btn {
+
+    /* Variáveis Color Button */
     --btn-bg-color: var(--text-color-primary);
     --btn-color: var(--bg-color);
+    
+    /* CSS Button */
     border: 0;
     background-color: transparent;
 
@@ -19,6 +24,7 @@
     color: var(--btn-color);
 }
 
+/* Classe Botão Hover */
 .btn:hover {
     --btn-bg-color: linear-gradient(
         90deg,
