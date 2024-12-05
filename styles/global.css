@@ -18,6 +18,7 @@
 
 /* Variáveis CSS */
 :root {
+    /* Variáveis de Color */
     --bg-color: #09090b;
     --surface-color: #18181b;
     --stroke-color: #27272A;
@@ -26,26 +27,32 @@
     --brand-color-primary: #f7b733;
     --brand-color-secondary: #FC4A1A;
 
-    --ff-sans: 'Inter', system-ui, sans-serif; /* ff-sans significa font family */ 
-    --fw-base: 400; /* fw-base significa font weight */
-    --fw-md: 500; /* font weight medium */
-    --fw-bold: 800; /* font weight bold */
+    /* Variável Font Family */
+    --ff-sans: 'Inter', system-ui, sans-serif; /* ff-sans significa font family */
+    
+    /* Variáveis de Font Weight */
+    --fw-base: 400; 
+    --fw-md: 500; 
+    --fw-bold: 800; 
 
-    /* variáveis de fontes para o mobile */
-    --fs-sm: 0.875rem; /* font size small 14px/16=0.875 */
-    --fs-base: 1rem; /* font size 16px/16=1 */
-    --fs-lg: 1.25rem; /* font size large 20px/16=1.25 */
-    --fs-xl: 1.5rem; /* font size extra large 24px/16=1.5 */
-    --fs-2xl: 2.5rem; /* font size 2x extra large 40px/16=2.5 */
+    /* Variáveis de Font Size - Mobile */
+    --fs-sm: 0.875rem; /* Small 14px/16=0.875 */
+    --fs-base: 1rem; /* Base 16px/16=1 */
+    --fs-lg: 1.25rem; /* Large 20px/16=1.25 */
+    --fs-xl: 1.5rem; /* Extra large 24px/16=1.5 */
+    --fs-2xl: 2.5rem; /* 2Extra large 40px/16=2.5 */
 
-    /* Variáveis de padding para o mobile */
-    --py-base: 1rem; /* padding eixo y 16px/16=1 */
-    --py-lg: 1.5rem; /* padding eixo y 24px/16=1.5 */
-    --py-xl: 3rem; /* padding do eixo y 48px/16=3 */
+    /* Variáveis de Padding eixo Y - Mobile */
+    --py-base: 1rem; /* 16px/16=1 */
+    --py-lg: 1.5rem; /* 24px/16=1.5 */
+    --py-xl: 3rem; /* 48px/16=3 */
 
-    --px-lg: 1.5rem; /* padding do eixo x 24px/16=1.5 */
+    /* Variáveis de Padding eixo X - Mobile */
+    --px-lg: 1.5rem; /* 24px/16=1.5 */
 }
 
+
+/* CSS Font Global */
 html {
     font-family: var(--ff-sans);
     font-weight: var(--fw-base);
@@ -54,10 +61,12 @@ html {
     color: var(--text-color-primary);
 }
 
+/* CSS Color Global */
 body {
     background-color: var(--bg-color);
 }
 
+/* CSS Heading Global */
 h1, h2, h3 {
     line-height: 1.2;
     color: var(--text-color-primary);
@@ -65,17 +74,21 @@ h1, h2, h3 {
     letter-spacing: -0.04em;
 }
 
+/* H1 Font Size Global */
 h1 {
     font-size: var(--fs-2xl);
 }
 
+/* H2 Font Size Global */
 h2 {
     font-size: var(--fs-xl);
 }
 
+/* H3 Font Size Global */
 h3 {
     font-size: var(--fs-lg);
 }
+
 
 a {
     text-decoration: none;
