@@ -18,7 +18,7 @@
 
 /* Variáveis CSS */
 :root {
-    /* Variáveis de Color */
+    /* Variáveis Color */
     --bg-color: #09090b;
     --surface-color: #18181b;
     --stroke-color: #27272A;
@@ -30,24 +30,24 @@
     /* Variável Font Family */
     --ff-sans: 'Inter', system-ui, sans-serif; /* ff-sans significa font family */
     
-    /* Variáveis de Font Weight */
+    /* Variáveis Font Weight */
     --fw-base: 400; 
     --fw-md: 500; 
     --fw-bold: 800; 
 
-    /* Variáveis de Font Size - Mobile */
+    /* Variáveis Font Size - Mobile */
     --fs-sm: 0.875rem; /* Small 14px/16=0.875 */
     --fs-base: 1rem; /* Base 16px/16=1 */
     --fs-lg: 1.25rem; /* Large 20px/16=1.25 */
     --fs-xl: 1.5rem; /* Extra large 24px/16=1.5 */
     --fs-2xl: 2.5rem; /* 2Extra large 40px/16=2.5 */
 
-    /* Variáveis de Padding eixo Y - Mobile */
+    /* Variáveis Padding Eixo Y - Mobile */
     --py-base: 1rem; /* 16px/16=1 */
     --py-lg: 1.5rem; /* 24px/16=1.5 */
     --py-xl: 3rem; /* 48px/16=3 */
 
-    /* Variáveis de Padding eixo X - Mobile */
+    /* Variáveis Padding Eixo X - Mobile */
     --px-lg: 1.5rem; /* 24px/16=1.5 */
 }
 
@@ -74,21 +74,20 @@ h1, h2, h3 {
     letter-spacing: -0.04em;
 }
 
-/* H1 Font Size Global */
+/* CSS H1 Font Size Global */
 h1 {
     font-size: var(--fs-2xl);
 }
 
-/* H2 Font Size Global */
+/* CSS H2 Font Size Global */
 h2 {
     font-size: var(--fs-xl);
 }
 
-/* H3 Font Size Global */
+/* CSS H3 Font Size Global */
 h3 {
     font-size: var(--fs-lg);
 }
-
 
 a {
     text-decoration: none;
@@ -119,16 +118,17 @@ img {
 /* Desktop */
 @media (width >= 80em) {
     :root {
-        /* variáveis de fontes para o desktop */
-        --fs-lg: 2rem; /* 32px/16=2 */
-        --fs-xl: 3rem; /* 48px/16=3 */
-        --fs-2xl: 4rem; /* 64px/16=4 */
+        /* Variáveis Font Size - Desktop */
+        --fs-lg: 2rem; /* Large 32px/16=2 */
+        --fs-xl: 3rem; /* Extra large 48px/16=3 */
+        --fs-2xl: 4rem; /* 2Extra large 64px/16=4 */
 
-        /* Variáveis de padding para o desktop */
-        --py-base: 1.5rem; /* padding eixo y 24px/16=1.5 */
-        --py-lg: 2.5rem; /* padding eixo y 40px/16=2.5 */
-        --py-xl: 5rem; /* padding do eixo y 80px/16=5 */
-
-        --px-lg: 2rem; /* padding do eixo x 32px/16=2 */
+        /* Variáveis Padding eixo Y - Desktop */
+        --py-base: 1.5rem; /* 24px/16=1.5 */
+        --py-lg: 2.5rem; /* 40px/16=2.5 */
+        --py-xl: 5rem; /* 80px/16=5 */
+        
+        /* Variáveis Padding Eixo X - Desktop */
+        --px-lg: 2rem; /* 32px/16=2 */
     }
 }

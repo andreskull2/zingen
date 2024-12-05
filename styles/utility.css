@@ -1,69 +1,86 @@
+/* Classe Padding Base Eixo Y */
 .py-base {
     padding-block: var(--py-base);
 }
 
+/* Classe Padding Large Eixo Y */
 .py-lg {
     padding-block: var(--py-lg);
 }
 
+/* Classe Padding Extra Large Eixo Y */
 .py-xl {
     padding-block: var(--py-xl);
 }
 
+/* Classe Padding Large Eixo X */
 .px-lg {
     padding-inline: var(--px-lg);
 }
 
+/* Classe Container */
 .container {
-    /* Variável para o mobile */
+
+    /* Variável Max-Width - Mobile */
     --max-width: 375px;
-    /* isso é um cálculo para o espaço lateral */
+
+    /* Isso é um cálculo para o espaço lateral */
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
-    /* isso centraliza */
+
+    /* Isso centraliza */
     margin-inline: auto;
-    /* border: solid violet; */
 }
 
+/* Classe apenas Desktop */
 .desktop-only {
     display: none;
 }
 
+/* Classe Even Columns */
 .even-columns {
     display: grid;
     gap: 1rem;
 }
 
+/* Classe Flex */
 .flex {
     display: flex;
 }
 
+/* Classe Items Center */
 .items-center {
     align-items: center;
 }
 
+/* Classe Gap 1 */
 .gap-1 {
     gap: 1rem;
 }
 
+/* Classe Gap 1.5 */
 .gap-1\.5 {
     gap: 1.5rem;
 }
 
+/* Classe Grid */
 .grid {
     display: grid;
 }
 
 /* Desktop */
 @media (width >= 80em) {
+    /* Classe Container - Desktop */
     .container {
-        /* variável para o desktop */
+        /* Variável Max-Width - Desktop */
         --max-width: 80rem;
     }
 
+    /* Classe apenas Desktop - Desktop */
     .desktop-only {
         display: initial;
     }
 
+    /* Classe Even Columns - Desktop */
     .even-columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
