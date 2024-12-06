@@ -1,9 +1,12 @@
+
+/* ID Imagem - Mobile */
 #smartphones-img {
-    margin-top: 5rem;
+    margin-top: 5rem; /* 80px/16=5rem */
     background: url(../assets/illustration.svg) top/cover;
 
 }
 
+/* CSS Para Sections */
 section {
     & header {
         & strong {
@@ -26,7 +29,7 @@ section {
     }
 }
 
-
+/* Desliga #smartphones-img no Desktop */
 @media (width >= 80em) {
     #smartphones-img {
         display: none;
