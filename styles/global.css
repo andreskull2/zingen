@@ -94,11 +94,13 @@ h3 {
     font-size: var(--fs-lg);
 }
 
+/* Reset Link */
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* CSS Link Hover */
 a:hover {
     background: linear-gradient(
         90deg,
@@ -111,6 +113,7 @@ a:hover {
     color: transparent;
 }
 
+/* Reset List */
 ul[role="list"] {
     list-style: none;
 }

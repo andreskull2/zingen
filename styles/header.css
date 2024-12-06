@@ -1,4 +1,6 @@
+/* Alinhamento interno */
 header {
+    /* Esse alinhamento corrige o Logotipo */
     & a:first-child {
         margin-right: auto;
     }

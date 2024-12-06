@@ -34,7 +34,7 @@
         );
     --btn-color: var(--surface-color);
 
-    /* Não me lembro consultar GPT */
+    /* Fix para o bug no Safari */
     -webkit-background-clip: initial;
     background-clip: initial;
     color: var(--btn-color);
@@ -58,28 +58,44 @@
     font-size: 1.125rem;
 }
 
+/* CSS Para fazer o Botão com contorno Gradiente */
 .btn[aria-label] {
 
     position: relative;
 
+    /* Essa é a borda do botão */
     &::before {
+        /* Conteúdo vazio */
         content: "";
+
+        /* Posição */
         position: absolute;
         border-radius: inherit;
+
+        /* Contorno */
         inset: 0.09375rem;
         background-color: var(--bg-color);
     }
+
+    /* Esse é o gradiente da fonte */
     &::after {
         content: attr(aria-label);
         background: var(--btn-bg-color);
+
+        /* Isso recorta o gradiente no formato do texto */
         -webkit-background-clip: text;
+        
+        /* Tem que repetir sem o motor webkit */
         background-clip: text;
+        
+        /* Isso tira a cor da fonte */
         color: transparent;
         position: relative;
         z-index: 1;
     }
 }
 
+/* Desktop */
 @media (width >= 80em) {
     .btn-sm {
         padding: 0.75rem 1.5rem;

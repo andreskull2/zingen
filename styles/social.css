@@ -1,3 +1,4 @@
+/* CSS Componente Social Links */
 a.social {
     --bg-img: "";
     background-image: var(--bg-img);
@@ -8,6 +9,7 @@ a.social {
     -webkit-background-clip: initial;
     background-clip: initial;
 
+    /* CSS Social TikTok */
     &[aria-label="tiktok"] {
         --bg-img: url(../assets/icons/tiktok.svg);
     
@@ -16,6 +18,7 @@ a.social {
         }
     }
 
+    /* CSS Social Instagram */
     &[aria-label="instagram"] {
         --bg-img: url(../assets/icons/instagram.svg);
     
@@ -24,6 +27,7 @@ a.social {
         }
     }
 
+    /* CSS Social Twitter */
     &[aria-label="twitter"] {
         --bg-img: url(../assets/icons/twitter.svg);
     
@@ -32,6 +36,7 @@ a.social {
         }
     }
 
+    /* CSS Social Discord */
     &[aria-label="discord"] {
         --bg-img: url(../assets/icons/discord.svg);
     
