@@ -1,11 +1,15 @@
+/* ID Pricing */
 #pricing {
 
+    /* Variável Font Size Price */
     --fs-price: 2rem;
 
+    /* Centraliza o Header */
     & header {
         text-align: center;
     }
 
+    /* Espaço superior */
     & .cards {
         margin-top: 2rem;
     }
@@ -16,15 +20,17 @@
     }
 
     & .card p {
-        margin-top: .25rem;
+        margin-top: .25rem; /* 4px/16=0.25rem */
     }
 
+    /* Preço */
     & zin-pricing {
         display: block;
         padding-block: 1.5rem;
         font: var(--fw-bold) var(--fs-price)/1.2 var(--ff-sans);
     }
 
+    /* Informação complementar */
     & zin-pricing small {
         font: var(--fw-base) 1rem/125% var(--ff-sans);
         color: var(--text-color-secondary);
@@ -37,6 +43,8 @@
     & .separator {
         height: 1px;
         margin-block: 2rem;
+
+        /* Efeito de Transparência */
         background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
     }
 
@@ -53,15 +61,16 @@
         color: var(--text-color-secondary);
     }
 
+    /* Destaque parte superior */
     & .premium {
         position: relative;
             & .card {
                 padding-top: 4.25rem;
 
-            & > span {
-                position: absolute;
-                top: 0;
-                left: 0;
+                & > span {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
 
                 padding: .75rem 2rem;
                 background: linear-gradient(
@@ -80,24 +89,40 @@
             }
         }
 
+        /* Isso aqui vai criar a borda abaixo */
         padding: 2px;
 
+        /* Essa é a borda gradiente */
         &::before {
+
+            /* Elemento vazio */
             content: "";
+
+            /* Gradiente */
             background: linear-gradient(
                     90deg,
                     var(--brand-color-secondary) 0%,
                     var(--brand-color-primary) 100%
                 );
+
+                /* Posição absoluta em relação a premium */
                 position: absolute;
+
+                /* Aqui o Gradiente preenche todo o conteúdo de Premium */
                 inset: 0;
+
+                /* Borda */
                 border-radius: 1.5rem;
+
+                /* Foi enviado para traz - Eixo Z */
                 z-index: -1;
 
         }
     }
 
+    /* Desktop */
     @media (width >=80em) {
+        /* Variável para Preço */
         --fs-price: 2.5rem;
 
         & header {
