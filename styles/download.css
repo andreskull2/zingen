@@ -1,31 +1,44 @@
+
+/* ID Download */
 #download {
+
+    /* CSS do card */
     .card {
         padding: 3rem 1.5rem 15rem;
         position: relative;
         
+        /* CSS Imagem do cara cantando */
         & > img {
-            width: 14.5rem;
+            width: 14.5rem; /* 232px/16=14.5rem */
             position: absolute;
             bottom: 0;
+
+            /* Recuo da imagem */
             right: -3.5rem;
         }
     }
 
+    /* CSS dos botões das lojas */
     .buttons {
         flex-wrap: wrap;
         margin-top: 2rem;
     }
 
+    /* Desktop */
     @media (width >= 80em) {
-        .card {
-            padding: 8.75rem 5rem;
 
+        /* CSS Card - Mobile */
+        .card {
+            padding: 8.75rem 5rem; /* 140px/16=8.75rem - 80px/16=5rem */
+
+            /* CSS Largura do texto */
             & > div:nth-child(1) {
-                max-width: 40rem;
+                max-width: 40rem; /* 640px/16=40rem */
             }
 
+            /*  */
             & > img {
-                width: 29.125rem;
+                width: 29.125rem; /* 466px/16=29.125rem */
             }
         }
     }
