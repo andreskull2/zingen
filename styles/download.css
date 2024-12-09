@@ -31,12 +31,12 @@
         .card {
             padding: 8.75rem 5rem; /* 140px/16=8.75rem - 80px/16=5rem */
 
-            /* CSS Largura do texto */
+            /* CSS Largura do texto - Desktop */
             & > div:nth-child(1) {
                 max-width: 40rem; /* 640px/16=40rem */
             }
 
-            /*  */
+            /* CSS Largura da Imagem - Desktop */
             & > img {
                 width: 29.125rem; /* 466px/16=29.125rem */
             }

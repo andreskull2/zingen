@@ -1,3 +1,4 @@
+/* Classe Footer */
 footer {
     color: var(--text-color-secondary);
     font-weight: var(--fw-md);
@@ -15,6 +16,7 @@ footer {
         gap: 4rem;
     }
 
+    /* Ele incluiu essa para melhorar o alinhamento do eixo Y - Por ser Grid */
     & .top ul {
         align-content: start;
     }
@@ -26,6 +28,7 @@ footer {
         color: var(--brand-color-primary);
     }
 
+    /* Lembre-se que o bottom é FLEX */
     & .bottom {
         flex-wrap: wrap;
 
@@ -34,16 +37,18 @@ footer {
         }
 
         & span {
-            font-size: .875rem;
+            font-size: .875rem; /* 14px/16=0.875rem */
         }
     }
 
+    /* Desktop */
     @media (width >= 80em) {
         .container {
             padding-inline: 0;
             padding-bottom: 2rem;
         }
 
+        /* O TOP é Grid */
         & .top {
             grid-template-columns: auto 1fr;
 
@@ -51,7 +56,7 @@ footer {
                 margin-left: auto;
 
                 & ul {
-                    width: 14rem;
+                    width: 14rem; /* 224px/16=14rem */
                 }
             }
         }

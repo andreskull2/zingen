@@ -1,5 +1,6 @@
 /* CSS Componente Social Links */
 a.social {
+    /* Variável para social */
     --bg-img: "";
     background-image: var(--bg-img);
     width: 1.5rem;
